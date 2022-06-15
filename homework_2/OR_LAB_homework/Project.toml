@@ -1,0 +1,7 @@
+name = "OR_LAB_homework"
+uuid = "4b665f18-25b3-410a-a27d-286f68c4e0ec"
+authors = ["Joscha Bisping <joscha.bisping@outlook.de>"]
+version = "0.1.0"
+
+[deps]
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
