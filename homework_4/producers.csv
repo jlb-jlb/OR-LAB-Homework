@@ -1,0 +1,16 @@
+region,plant,p_max,sc_to_poland,sc_to_switzerland,sc_to_netherlands,sc_to_austria
+germany,berlin,30,0.717,0.481,0.51,0.743
+germany,munich,,0.562,,0.138,0.815
+germany,hamburg,20,0.34,0.308,0.29,0.162
+germany,bremen,10,0.787,0.273,0.425,0.63
+france,paris,40,0.662,0.82,0.983,0.968
+france,strassbourg,70,0.04,0.961,0.377,
+france,lion,15,,0.953,0.585,0.503
+belgium,brussel_1,3,0.244,0.394,0.351,0.877
+belgium,brussel_2,4,0.177,0.509,0.637,
+belgium,brussel_3,3,0.571,0.796,0.754,0.007
+belgium,brussel_4,2,0.014,0.103,0.174,0.331
+denmark,copenhagen,10,0.787,,0.643,0.305
+denmark,arrhus,,0.959,0.103,0.366,0.652
+belgium,brussel_4,2,0.593,0.263,0.435,0.965
+germany,bremen,10,0.34,0.189,0.129,0.291
