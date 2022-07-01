@@ -1,0 +1,12 @@
+plants,region,p_max,sc_1,sc_2,sc_3
+Seattle,Middle,350,0.225,0.153,0.162
+San Diego,East,600,0.225,0.162,0.126
+New York,East,100,0.001,0.861,0.001
+Chicago,West,150,0.027,0.628,0.949
+Los Angeles,West,700,0.291,0.601,0.924
+Washington,West,1300,0.475,0.597,0.948
+Utah,Middle,950,,0.077,0.534
+San Francisco,West,700,0.46,0.927,0.791
+Texas,Middle,,0.083,,0.403
+Maine,East,40,0.66,0.038,0.374
+Chicago,West,150,0.027,0.628,0.949
