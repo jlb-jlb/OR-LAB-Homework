@@ -3,8 +3,8 @@ using DataFrames
 using Statistics
 
 # Import both datasets using the package CSV
-df_m = CSV.read("./homework_4/markets.csv", DataFrame)
-df_p = CSV.read("./homework_4/producers.csv", DataFrame)
+df_m = CSV.read("./markets.csv", DataFrame)
+df_p = CSV.read("./producers.csv", DataFrame)
 
 
 # In the producers dataset, deal with missing values by replacing the missing values
@@ -27,7 +27,8 @@ describe(df_p)
 describe(df_tmp)
 
 # simply attach the describe data to a variable
-tmp = describe(df_tmp)
+tmp = describe(df_tmp) 
+# tmp = describe(df_p) # This would change the mean 
 tmp.mean
 tmp.mean[3]
 
@@ -74,12 +75,12 @@ transform!(
     df_tmp,
     [:sc_to_poland_mean, :sc_to_switzerland_mean, :sc_to_netherlands_mean, :sc_to_austria_mean]
     =>
-        ByRow(+) => :sum_of_means
+        ByRow(+) => :sum_of_sc_means
 )
 
 transform!(
     df_tmp,
-    :sum_of_means => ByRow(x -> x / 4) => :mean_of_all
+    :sum_of_sc_means => ByRow(x -> x / 4) => :mean_of_all
 )
 
 transform!(
@@ -141,7 +142,9 @@ for p in plants
     println()
 end
 
-
+# println(df_m)
+# println(df_p)
+# println(df_tmp)
 
 
 
