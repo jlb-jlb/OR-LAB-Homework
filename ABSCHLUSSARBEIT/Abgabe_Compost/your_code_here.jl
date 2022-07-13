@@ -2,6 +2,7 @@
 using CSV
 using DataFrames
 using Dates, TimeZones
+using Statistics
 
 df = CSV.read("./data/timeseries.csv", DataFrame, dateformat="yyyy-mm-ddTHH:MM:SSZ")
 
@@ -32,6 +33,23 @@ df_18.hour[:35039:35040]
 
 df_18
 
-gdf = groupby(df_18, :hour)
+describe(df_18)
+select!(df_18, r"hour", r"solar", r"wind_onshore",r"nuclear", r"coal")
+describe(df_18)
+df_18.utc_timestamp
 
-gdf[2]
+df_m = combine(groupby(df_18, :hour), All() .=> mean)
+df_m
+
+# Execise 2
+
+
+tech
+hours
+production
+cost
+x
+curtailment
+
+
+
